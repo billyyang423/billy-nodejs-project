@@ -15,7 +15,7 @@ jobs:
       container_port: "8080"
       service_port: "80"
       domain_name: "billy.idevops.io"
-      zone_id: "Z370FY5A2PDAE"
+      zone_id: "Zone ID"
       k8s_cluster_name: "idevops-vaas-cluster"
       aws_region: "us-west-2"
       replicas: 1
@@ -25,8 +25,8 @@ jobs:
       min_ready_seconds: 5
       initial_delay_seconds: 25
       period_seconds: 20
-      docker_org: "billyyang423"
-      docker_image: "billy-nodejs"
+      docker_org: "username"
+      docker_image: "docker image name"
       docker_tag: "${{ github.run_number }}"
       path: "/"
 
